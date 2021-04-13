@@ -1,0 +1,13 @@
+<p-tabMenu [model]="items">
+    <nav>
+        <a routerLink="buscar-empresas" routerLinkActive="active">Employee List</a>
+    </nav>
+    <nav>
+        <a routerLink="cadastrar-empresa" routerLinkActive="active"  >Add Employee</a>
+    </nav>
+
+</p-tabMenu>
+
+<div class = "container">
+    <router-outlet></router-outlet>
+</div>

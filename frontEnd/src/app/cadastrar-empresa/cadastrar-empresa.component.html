@@ -1,0 +1,84 @@
+
+
+<br/><br/>
+    <form (ngSubmit) = "onSubmit()">
+    <p-panel header="Formulario para Cadastro" >
+      
+           <div id="content">
+             <label >CNPJ:*</label>
+            
+             <input  [(ngModel)] ="empresa.cnpj" id="cnpjTxt" name="cnpj"  type="text" pInputText  placeholder="cnpj para busca" />
+
+             <label id="tipoEmpresaLbl">Tipo de empresa:*</label>
+             
+            </div>
+
+            <br/>
+            <div id="content">
+
+
+
+                <label >Nome da empresa:*</label>
+   
+   
+    <input  id="nomeEmpresaTxt" name="nomeEmpresa"   [(ngModel)] ="empresa.nomeEmpresa" maxlength="50" type="text" pInputText  placeholder="Nome da empresa" />
+    <label id="razaoSocialLbl">Razão social:*</label>
+    <input [(ngModel)] ="empresa.razaoSocial" name="razaoSocial" class="space-2-left" maxlength="40" type="text" pInputText  placeholder="Razão social" />
+            </div>
+            <br/>
+            <div id="content">
+                <label > Contato:*</label>
+
+
+                <input name="contato" [(ngModel)] ="empresa.contato" id="contatoTxt" maxlength="40" type="text" pInputText  placeholder="Contato" />
+
+                <label id="emailLbl">Email:*</label>
+    <input  class="space-2-left "  name="email"  [(ngModel)] ="empresa.email" type="text"maxlength="40" pInputText  placeholder="cnpj para busca" />
+
+            </div>
+        <br/>
+        <div id="content">
+            <label >Cep:*</label>
+
+            <input  id="cepTxt" name="cep" [(ngModel)] ="empresa.cep" type="text" pInputText  placeholder="Cep" />
+            <button id="btnBuscarCep" pButton type="button" label="Buscar CEP" ></button>
+
+            <label id="estadoLbl">Estado:*</label>
+            <input  id="estadoTxt" name="estado" [(ngModel)] ="empresa.estado" type="text" maxlength="40" pInputText  placeholder="nome do estado" />
+        </div>
+        <br/>
+        <div id="content">
+
+            <label >Bairro:*</label>
+
+            <input  id="bairrotxt"  name="bairro" [(ngModel)] ="empresa.bairro" type="text" pInputText maxlength="40" placeholder="nome do bairro" />
+
+
+            
+    <label id="cidadeLbl">Cidade:*</label>
+    <input  id="cidadeTxt" name="cidade" type="text" [(ngModel)] ="empresa.cidade" maxlength="40" pInputText  placeholder="nome da cidade" />
+        </div>
+        <br/>
+        <div id="content">
+
+            <label >Logradouro:*</label>
+
+
+            <input  id="logradouroTxt" name="logradouro" [(ngModel)] ="empresa.logradouro" type="text" pInputText maxlength="40" placeholder="nome do logradouro" />
+
+            <label id="complementoLbl" >Complemento:*</label>
+    <input id="complementTxt" name="complemento" [(ngModel)] ="empresa.complemento" type="text" pInputText  placeholder="nome do Complemento" />
+
+
+        </div>
+      
+    </p-panel>
+    <button (click)="onSubmit()" pButton type="button" label="Salvar"  style="margin-left: 40%;width:10%"></button>
+</form>
+
+
+
+
+
+
+
